@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+<!-- SEO -->
+<title>Tractări Auto Buzău | Servicii Non-Stop 24/7</title>
+<meta name="description" content="Tractări auto Remorcari auto Buzău și împrejurimi. Platformă auto non-stop 24/7. Sună acum!">
+<meta name="keywords" content="tractari auto buzau, platforma auto buzau, tractare non stop buzau, asistenta rutiera buzau, remorcari buzau">
+<meta name="author" content="Tractări Auto Buzău">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Tractări Auto Buzău – Non-Stop 24/7">
+<meta property="og:description" content="Platformă auto rapidă și sigură în Buzău. Intervenție imediată.">
+<meta property="og:image" content="pozafundal.jpeg">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tractări Auto Buzău – Non-Stop 24/7">
+<meta name="twitter:description" content="Platformă auto rapidă și sigură în Buzău. Intervenție imediată.">
+<meta name="twitter:image" content="pozafundal.jpeg">
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Tractări Auto Buzău",
+  "image": "pozafundal.jpeg",
+  "@id": "https://www.tractaribuzau.eu",
+  "url": "https://www.tractaribuzau.eu",
+  "telephone": "+40722921675",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada Frasinet 12",
+    "addressLocality": "Buzău",
+    "postalCode": "120045",
+    "addressCountry": "RO"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": [
+    "https://www.facebook.com/tractariauto-buzau",
+    "https://www.instagram.com/tractariauto-buzau"
+  ]
+}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Poppins',sans-serif;
+  color:#fff;
+  min-height:100vh;
+  overflow-x:hidden;
+  background:
+    linear-gradient(rgba(26,31,54,0.85),rgba(26,31,54,0.85)),
+    url("pozafundal.jpeg") center/cover no-repeat fixed;
+}
+
+}
+/* PARTICULE */
+#particles{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+}
+
+/* ===== MENIU SUS ===== */
+.top-menu{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+}
+
+.menu-inner{
+  max-width:1100px;
+  margin:15px auto 0;
+  padding:14px 26px;
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(22px);
+  border-radius:22px;
+  border:1px solid rgba(255,255,255,0.35);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 10px 30px rgba(0,0,0,.35),0 0 25px rgba(161,19,232,.45);
+}
+
+.menu-logo{
+  font-weight:800;
+}
+
+.menu-links{
+  display:flex;
+  gap:26px;
+}
+
+.menu-links a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  position:relative;
+}
+
+.menu-links a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:0;
+  height:2px;
+  background:#a113e8;
+  transition:width .3s;
+}
+
+.menu-links a:hover::after,
+.menu-links a.active::after{
+  width:100%;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:1.8em;
+  cursor:pointer;
+}
+
+/* MOBILE MENU */
+@media(max-width:768px){
+  .menu-links{
+    position:absolute;
+    top:70px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(26,31,54,.96);
+    width:90%;
+    border-radius:18px;
+    flex-direction:column;
+    align-items:center;
+    padding:25px 0;
+    gap:20px;
+    display:none;
+  }
+  .menu-links.active{display:flex;}
+  .menu-toggle{display:block;}
+}
+/* HEADER */
+header{
+  background:#a113e8;
+  padding:20px 5%;
+  text-align:center;
+  font-weight:bold;
+  box-shadow:0 4px 15px rgba(0,0,0,0.3);
+  position:relative;
+  z-index:2;
+}
+
+/* MENIU PLUTITOR */
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:rgba(161,19,232,0.9);
+  z-index:999;
+  display:flex;
+  justify-content:center;
+  padding:12px 0;
+  gap:30px;
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.2);
+}
+.navbar a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:1.1em;
+  padding:6px 12px;
+  border-radius:8px;
+  transition: background 0.3s, transform 0.3s;
+}
+.navbar a:hover{
+  background:rgba(255,255,255,0.15);
+  transform:scale(1.05);
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:100px 5% 40px;
+  position:relative;
+  z-index:2;
+}
+.hero h2{
+  color:#a113e8;
+  font-size:clamp(2em,5vw,3em);
+}
+.hero p{
+  max-width:700px;
+  margin:20px auto;
+}
+
+/* CALL BUTTON HERO */
+.call-btn{
+  display:inline-block;
+  background:#fff;
+  color:#a113e8;
+  padding:26px 75px;
+  border-radius:60px;
+  font-size:1.9em;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow:0 0 50px #a113e8;
+  animation:pulse 1.5s infinite alternate;
+}
+@keyframes pulse{
+  from{transform:scale(1);}
+  to{transform:scale(1.07);}
+}
+
+/* FLOAT BOXES */
+.float-section{
+  max-width:900px;
+  margin:40px auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+.float-box{
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(20px);
+  border-radius:25px;
+  border:1px solid rgba(255,255,255,0.35);
+  padding:30px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  transition:transform .4s, box-shadow .4s, background .4s;
+}
+.float-box::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-80%;
+  width:50%;
+  height:100%;
+  background:linear-gradient(120deg,rgba(255,255,255,.2),transparent);
+  transform:skewX(-25deg);
+  animation:sweep 3s infinite;
+}
+@keyframes sweep{to{left:120%;}}
+.float-box:hover{
+  transform:translateY(-6px) scale(1.02);
+  background:rgba(255,255,255,0.25);
+}
+.float-box h3{color:#a113e8;}
+
+/* GALLERY */
+.photo-section{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+  padding:50px 5%;
+  position:relative;
+  z-index:2;
+}
+.photo-box{
+  position:relative;
+  width:100%;
+  aspect-ratio:4/3;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 15px 35px rgba(0,0,0,.45),0 0 25px rgba(161,19,232,.35);
+  transition:transform .45s ease, box-shadow .45s ease;
+}
+.photo-box::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:18px;
+  box-shadow:inset 0 0 20px rgba(255,255,255,.12);
+  pointer-events:none;
+}
+.photo-box img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .45s ease;
+}
+.photo-box:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 25px 55px rgba(0,0,0,.6),0 0 45px rgba(161,19,232,.6);
+}
+.photo-box:hover img{transform:scale(1.12);}
+
+/* MAP SECTION */
+.map-section{
+  padding:50px 5%;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+.map-section h2{
+  color:#a113e8;
+  margin-bottom:20px;
+}
+.map-frame{
+  max-width:700px;
+  margin:0 auto;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(161,19,232,0.35), 0 0 20px rgba(0,0,0,0.2);
+  overflow:hidden;
+}
+.map-frame iframe{
+  width:100%;
+  height:350px;
+  border:0;
+}
+
+/* FOOTER */
+footer{
+  background:#a113e8;
+  text-align:center;
+  padding:25px;
+  position:relative;
+  z-index:2;
+}
+
+/* BUTON FIX MOBIL */
+.mobile-call-full{
+  display:none;
+  position:fixed;
+  bottom:15px;
+  left:10px;
+  right:10px;
+  background:#a113e8;
+  color:#fff;
+  text-align:center;
+  font-size:1.6em;
+  font-weight:bold;
+  padding:16px 0;
+  z-index:999;
+  box-shadow:0 5px 20px rgba(0,0,0,0.35), inset 0 0 15px rgba(255,255,255,0.08);
+  border-radius:30px;
+  text-decoration:none;
+  transition: background .3s, transform .3s, box-shadow .3s;
+}
+.mobile-call-full:hover{
+  background:#8b0fbf;
+  transform:translateY(-3px) scale(1.02);
+  box-shadow:0 8px 25px rgba(0,0,0,0.45), inset 0 0 25px rgba(255,255,255,0.12);
+}
+@media(max-width:768px){
+  .mobile-call-full{display:block;}
+}
+</style>
+</head>
+
+<body>
+
+<nav class="top-menu">
+  <div class="menu-inner">
+    <div class="menu-logo">Tractări Auto Buzău</div>
+    <div class="menu-links" id="menuLinks">
+      <a href="index.html">Acasă</a>
+      <a href="despre-noi.html">Despre noi</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</nav>
+
+<header>
+  <h1>Tractări Auto Buzău</h1>
+</header>
+
+<div id="particles"></div>
+
+<section class="hero">
+  <h2>Servicii de Tractări Profesionale Buzau</h2>
+  <p>Remorcari / Tractari / Platforma Auto, intervenție rapidă, sigură și non-stop în Buzău, Autostrada A7 și împrejurimi.</p>
+  <a href="tel:+40722921675" class="call-btn">Apasa aici pentru a apela!<br>☎️0722921675</a>
+
+<div class="float-section">
+  <div class="float-box">
+    <h3>Rapiditate</h3>
+    <p>Ne deplasăm imediat la locația ta, indiferent de zi sau oră, pentru a interveni cât mai rapid și a rezolva problema fără întârzieri inutile.</p>
+  </div>
+  <div class="float-box">
+    <h3>Siguranță</h3>
+    <p>Asigurăm transportul vehiculului tău în condiții optime, folosind echipamente moderne și respectând toate standardele de siguranță, astfel încât să ajungă fără nicio daună.</p>
+  </div>
+  <div class="float-box">
+    <h3>Disponibil 24/7</h3>
+    <p>Suntem disponibili non-stop, inclusiv în weekend și sărbători legale, pentru a oferi suport rapid și continuu tuturor clienților noștri.</p>
+  </div>
+</div>
+
+</section>
+
+<section class="photo-section">
+  <div class="photo-box"><img src="pozaindex1.jpeg" alt="Galerie 1" loading="lazy"></div>
+  <div class="photo-box"><img src="pozaindex2.jpeg" alt="Galerie 2" loading="lazy"></div>
+</section>
+
+<section class="map-section">
+  <h2>Ne puteți găsi aici</h2>
+  <div class="map-frame">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28103.65383732163!2d26.8075008!3d45.1608576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b15f00746b49b1%3A0x12d18742264a9f31!2sTractari%20auto%20KNT!5e1!3m2!1sen!2sro!4v1768335294005!5m2!1sen!2sro" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<footer>
+  <p>📍 Buzău • ☎️ <a href="tel:0722921675" style="color:#fff">0722 921 675</a></p>
+  <p>© 2026 Tractări Auto Buzău</p>
+</footer>
+
+<a href="tel:+40722921675" class="mobile-call-full">📞 Apelează-ne aici!</a>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+tsParticles.load("particles",{
+  particles:{
+    number:{value:window.innerWidth < 768 ? 35 : 60},
+    size:{value:3},
+    move:{enable:true,speed:0.8},
+    opacity:{value:.3}
+  }
+});
+
+
+function toggleMenu(){
+  document.getElementById("menuLinks").classList.toggle("active");
+}
+
+document.querySelectorAll(".menu-links a").forEach(link=>{
+  if(link.href === window.location.href){
+    link.classList.add("active");
+  }
+});
+</script>
+
+</body>
+</html>

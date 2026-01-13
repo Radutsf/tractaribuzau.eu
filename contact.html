@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+<!-- SEO -->
+<title>Contact Tractări Auto Buzău | Intervenție Rapidă 24/7</title>
+<meta name="description" content="Ai nevoie de tractare auto în Buzău? Contactează-ne non-stop pentru intervenție rapidă și sigură. Telefon.">
+<meta name="keywords" content="contact tractari auto buzau, telefon tractare buzau, asistenta rutiera buzau">
+<meta name="author" content="Tractări Auto Buzău">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Contact Tractări Auto Buzău">
+<meta property="og:description" content="Suntem disponibili non-stop pentru tractări auto rapide în Buzău și împrejurimi.">
+<meta property="og:image" content="pozafundal.jpeg">
+<meta property="og:type" content="website">
+
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Tractări Auto Buzău",
+  "telephone": "+40722921675",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Buzău",
+    "addressCountry": "RO"
+  },
+  "openingHours": "Mo-Su 00:00-23:59"
+}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Poppins',sans-serif;
+  color:#fff;
+  min-height:100vh;
+  overflow-x:hidden;
+  background:
+    linear-gradient(rgba(26,31,54,0.88),rgba(26,31,54,0.88)),
+    url("pozafundal.jpeg") center/cover no-repeat fixed;
+}
+@media(max-width:768px){
+  body{background-attachment:scroll;}
+}
+
+/* PARTICULE */
+#particles{position:fixed;inset:0;z-index:0;pointer-events:none;}
+
+/* ===== MENIU SUS ===== */
+.top-menu{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+}
+
+.menu-inner{
+  max-width:1100px;
+  margin:15px auto 0;
+  padding:14px 26px;
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(22px);
+  border-radius:22px;
+  border:1px solid rgba(255,255,255,0.35);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 10px 30px rgba(0,0,0,.35),0 0 25px rgba(161,19,232,.45);
+}
+
+.menu-logo{
+  font-weight:800;
+}
+
+.menu-links{
+  display:flex;
+  gap:26px;
+}
+
+.menu-links a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  position:relative;
+}
+
+.menu-links a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:0;
+  height:2px;
+  background:#a113e8;
+  transition:width .3s;
+}
+
+.menu-links a:hover::after,
+.menu-links a.active::after{
+  width:100%;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:1.8em;
+  cursor:pointer;
+}
+
+/* MOBILE MENU */
+@media(max-width:768px){
+  .menu-links{
+    position:absolute;
+    top:70px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(26,31,54,.96);
+    width:90%;
+    border-radius:18px;
+    flex-direction:column;
+    align-items:center;
+    padding:25px 0;
+    gap:20px;
+    display:none;
+  }
+  .menu-links.active{display:flex;}
+  .menu-toggle{display:block;}
+}
+
+/* CONTACT SECTION */
+.contact{
+  position:relative;
+  z-index:2;
+  padding:110px 5% 70px;
+  max-width:1150px;
+  margin:auto;
+}
+.contact h2{
+  text-align:center;
+  color:#a113e8;
+  font-size:clamp(2.2em,5vw,2.8em);
+  margin-bottom:15px;
+}
+.contact .subtitle{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 55px;
+  font-size:1.05em;
+  opacity:.95;
+}
+
+/* GRID */
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:35px;
+}
+
+/* INFO BOX */
+.info-box{
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(20px);
+  border-radius:25px;
+  border:1px solid rgba(255,255,255,.35);
+  padding:35px 30px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.info-box::before{
+  content:"";
+  position:absolute;
+  top:0;left:-80%;
+  width:50%;height:100%;
+  background:linear-gradient(120deg,rgba(255,255,255,.22),transparent);
+  transform:skewX(-25deg);
+  animation:sweep 3s infinite;
+}
+@keyframes sweep{to{left:120%;}}
+.info-box h3{
+  color:#a113e8;
+  margin-bottom:10px;
+  font-size:1.3em;
+}
+.info-box p{
+  font-size:1.05em;
+}
+.info-box a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* FORM */
+.contact-form{
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(20px);
+  border-radius:25px;
+  border:1px solid rgba(255,255,255,.35);
+  padding:35px;
+}
+.contact-form h3{
+  color:#a113e8;
+  text-align:center;
+  margin-bottom:10px;
+  font-size:1.5em;
+}
+.contact-form .form-sub{
+  text-align:center;
+  font-size:.95em;
+  opacity:.9;
+  margin-bottom:25px;
+}
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:15px;
+  border:none;
+  outline:none;
+  font-size:1em;
+}
+.contact-form textarea{resize:none;}
+.contact-form button{
+  width:100%;
+  padding:16px;
+  background:#a113e8;
+  color:#fff;
+  border:none;
+  border-radius:35px;
+  font-size:1.2em;
+  font-weight:bold;
+  cursor:pointer;
+  transition:transform .3s, box-shadow .3s;
+  box-shadow:0 0 30px rgba(161,19,232,.6);
+}
+.contact-form button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 50px rgba(161,19,232,.9);
+}
+.form-note{
+  text-align:center;
+  font-size:.85em;
+  margin-top:12px;
+  opacity:.85;
+}
+
+/* MAP */
+.map-section{
+  margin-top:70px;
+  text-align:center;
+}
+.map-section h3{
+  color:#a113e8;
+  margin-bottom:20px;
+  font-size:1.6em;
+}
+.map-frame{
+  max-width:720px;
+  margin:0 auto;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 10px 35px rgba(161,19,232,.4);
+}
+.map-frame iframe{
+  width:100%;
+  height:340px;
+  border:0;
+}
+/* MOBILE MENU */
+@media(max-width:768px){
+  .menu-links{
+    position:absolute;
+    top:70px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(26,31,54,.96);
+    width:90%;
+    border-radius:18px;
+    flex-direction:column;
+    align-items:center;
+    padding:25px 0;
+    gap:20px;
+    display:none;
+  }
+  .menu-links.active{display:flex;}
+  .menu-toggle{display:block;}
+}
+
+/* CTA */
+.about-cta{
+  text-align:center;
+  margin:20px auto 0;
+}
+.about-cta a{
+  display:inline-block;
+  background:#fff;
+  color:#a113e8;
+  padding:18px 55px;
+  border-radius:50px;
+  font-size:1.4em;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 0 35px #a113e8;
+  transition:transform .3s, box-shadow .3s;
+}
+.about-cta a:hover{
+  transform:scale(1.06);
+  box-shadow:0 0 55px #a113e8;
+}
+
+/* FOOTER */
+footer{
+  background:#a113e8;
+  text-align:center;
+  padding:25px;
+  margin-top:70px;
+  position:relative;
+  z-index:2;
+}
+
+/* MOBILE CALL */
+.mobile-call-full{
+  display:none;
+  position:fixed;
+  bottom:15px;
+  left:10px;
+  right:10px;
+  background:#a113e8;
+  color:#fff;
+  text-align:center;
+  font-size:1.6em;
+  font-weight:bold;
+  padding:16px 0;
+  z-index:999;
+  border-radius:30px;
+  text-decoration:none;
+  box-shadow:0 5px 20px rgba(0,0,0,.35);
+}
+@media(max-width:768px){
+  .mobile-call-full{display:block;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENIU SUS -->
+<nav class="top-menu">
+  <div class="menu-inner">
+    <div class="menu-logo">Tractări Auto Buzău</div>
+    <div class="menu-links" id="menuLinks">
+      <a href="index.html">Acasă</a>
+      <a href="despre-noi.html">Despre noi</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</nav>
+
+<div id="particles"></div>
+
+<section class="contact">
+  <h2>Hai să rezolvăm problema rapid</h2>
+  <p class="subtitle">
+    Suntem disponibili <strong>non-stop</strong> pentru tractări auto în Buzău și împrejurimi.
+    Sună-ne sau trimite-ne un mesaj și intervenim imediat.
+  </p>
+
+  <div class="contact-grid">
+    <div class="info-box">
+      <h3>📞 Telefon</h3>
+      <p><a href="tel:+40722921675">0722 921 675</a></p>
+    </div>
+
+    <div class="info-box">
+      <h3>🕒 Program</h3>
+      <p>Disponibili 24/7<br>Inclusiv weekend</p>
+    </div>
+
+    <div class="info-box">
+      <h3>📍 Zonă deservită</h3>
+      <p>Buzău, Autostrada A7, DN2 & împrejurimi</p>
+    </div>
+
+    <div class="contact-form">
+  <h3>Trimite-ne un mesaj</h3>
+  <p class="form-sub">Te contactăm cât mai rapid posibil</p>
+  <form id="whatsappForm">
+    <input type="text" id="name" placeholder="Nume complet" required>
+    <input type="tel" id="phone" placeholder="Telefon" required>
+    <textarea id="message" rows="4" placeholder="Spune-ne pe scurt problema"></textarea>
+    <button type="submit">Trimite solicitarea</button>
+  </form>
+  <p class="form-note">📞 Pentru urgențe, recomandăm apel telefonic direct</p>
+</div>
+
+<script>
+document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // prevenim trimiterea normală a formularului
+
+  // preluăm valorile
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
+
+  // compunem mesajul
+  const fullMessage = `Salut! Sunt ${name} (${phone}) și am nevoie de asistență: ${message}`;
+
+  // codificăm pentru URL
+  const encodedMessage = encodeURIComponent(fullMessage);
+
+  // numărul tău WhatsApp cu prefix +40
+  const whatsappNumber = "40722921675";
+
+  // deschidem WhatsApp
+  window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+});
+</script>
+
+ <div class="about-cta">
+    <a href="tel:+40722921675">📞 Apasa pentru a apela!</a>
+  </div>
+
+
+<section class="map-section">
+  <h2>Ne puteți găsi aici</h2>
+  <div class="map-frame">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28103.65383732163!2d26.8075008!3d45.1608576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b15f00746b49b1%3A0x12d18742264a9f31!2sTractari%20auto%20KNT!5e1!3m2!1sen!2sro!4v1768335294005!5m2!1sen!2sro" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+</section>
+<footer>
+  <p>📍 Buzău • ☎️ <a href="tel:0722921675" style="color:#fff">0722 921 675</a></p>
+  <p>© 2026 Tractări Auto Buzău</p>
+</footer>
+
+<a href="tel:+40722921675" class="mobile-call-full">📞 Apelează-ne aici!</a>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+tsParticles.load("particles",{
+  particles:{
+    number:{value:window.innerWidth < 768 ? 30 : 55},
+    size:{value:3},
+    move:{enable:true,speed:.8},
+    opacity:{value:.3}
+  }
+});
+
+function toggleMenu(){
+  document.getElementById("menuLinks").classList.toggle("active");
+}
+
+document.querySelectorAll(".menu-links a").forEach(link=>{
+  if(link.href === window.location.href){
+    link.classList.add("active");
+  }
+});
+</script>
+
+</body>
+</html>

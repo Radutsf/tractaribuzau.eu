@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+<!-- SEO -->
+<title>Despre Noi | Tractări Auto Buzău</title>
+<meta name="description" content="Află cine suntem și cum oferim servicii profesionale de tractări auto în Buzău. Experiență, seriozitate și intervenții rapide 24/7.">
+<meta name="keywords" content="despre tractari auto buzau, firma tractari buzau, asistenta rutiera buzau">
+<meta name="author" content="Tractări Auto Buzău">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Despre Tractări Auto Buzău">
+<meta property="og:description" content="Servicii profesionale de tractări auto în Buzău și împrejurimi.">
+<meta property="og:image" content="pozafundal.jpeg">
+<meta property="og:type" content="website">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Poppins',sans-serif;
+  color:#fff;
+  min-height:100vh;
+  overflow-x:hidden;
+  background:
+    linear-gradient(rgba(26,31,54,0.88),rgba(26,31,54,0.88)),
+    url("pozafundal.jpeg") center/cover no-repeat fixed;
+}
+@media(max-width:768px){
+  body{background-attachment:scroll;}
+}
+
+/* PARTICULE */
+#particles{position:fixed;inset:0;z-index:0;pointer-events:none;}
+
+/* ===== MENIU SUS ===== */
+.top-menu{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+}
+
+.menu-inner{
+  max-width:1100px;
+  margin:15px auto 0;
+  padding:14px 26px;
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(22px);
+  border-radius:22px;
+  border:1px solid rgba(255,255,255,0.35);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 10px 30px rgba(0,0,0,.35),0 0 25px rgba(161,19,232,.45);
+}
+
+.menu-logo{
+  font-weight:800;
+}
+
+.menu-links{
+  display:flex;
+  gap:26px;
+}
+
+.menu-links a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  position:relative;
+}
+
+.menu-links a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:0;
+  height:2px;
+  background:#a113e8;
+  transition:width .3s;
+}
+
+.menu-links a:hover::after,
+.menu-links a.active::after{
+  width:100%;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:1.8em;
+  cursor:pointer;
+}
+
+/* MOBILE MENU */
+@media(max-width:768px){
+  .menu-links{
+    position:absolute;
+    top:70px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(26,31,54,.96);
+    width:90%;
+    border-radius:18px;
+    flex-direction:column;
+    align-items:center;
+    padding:25px 0;
+    gap:20px;
+    display:none;
+  }
+  .menu-links.active{display:flex;}
+  .menu-toggle{display:block;}
+}
+
+/* HERO */
+.about-hero{
+  padding:110px 5% 40px;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+.about-hero h1{
+  color:#a113e8;
+  font-size:clamp(2.2em,5vw,3em);
+}
+.about-hero p{
+  max-width:800px;
+  margin:20px auto 0;
+  opacity:.95;
+}
+
+/* CONTENT */
+.about-content{
+  max-width:1000px;
+  margin:40px auto;
+  padding:0 5%;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+  position:relative;
+  z-index:2;
+}
+
+/* GLASS BOX */
+.about-box{
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(20px);
+  border-radius:25px;
+  border:1px solid rgba(255,255,255,.35);
+  padding:35px;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
+  transition:transform .4s, background .4s;
+}
+.about-box:hover{
+  transform:translateY(-5px);
+  background:rgba(255,255,255,0.25);
+}
+.about-box h2{
+  color:#a113e8;
+  margin-bottom:15px;
+}
+.about-box p{
+  line-height:1.7;
+  opacity:.95;
+}
+
+/* HIGHLIGHTS */
+.about-highlights{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+.highlight{
+  background:rgba(255,255,255,0.15);
+  border-radius:20px;
+  padding:25px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,0.3);
+  box-shadow:0 0 20px rgba(161,19,232,.35);
+}
+.highlight h3{
+  color:#a113e8;
+  margin-bottom:10px;
+}
+
+/* CTA */
+.about-cta{
+  text-align:center;
+  margin:20px auto 0;
+}
+.about-cta a{
+  display:inline-block;
+  background:#fff;
+  color:#a113e8;
+  padding:18px 55px;
+  border-radius:50px;
+  font-size:1.4em;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 0 35px #a113e8;
+  transition:transform .3s, box-shadow .3s;
+}
+.about-cta a:hover{
+  transform:scale(1.06);
+  box-shadow:0 0 55px #a113e8;
+}
+
+/* FOOTER */
+footer{
+  background:#a113e8;
+  text-align:center;
+  padding:25px;
+  margin-top:60px;
+  position:relative;
+  z-index:2;
+}
+
+/* MOBILE CALL */
+.mobile-call-full{
+  display:none;
+  position:fixed;
+  bottom:15px;
+  left:10px;
+  right:10px;
+  background:#a113e8;
+  color:#fff;
+  text-align:center;
+  font-size:1.6em;
+  font-weight:bold;
+  padding:16px 0;
+  z-index:999;
+  border-radius:30px;
+  text-decoration:none;
+  box-shadow:0 5px 20px rgba(0,0,0,.35);
+}
+@media(max-width:768px){
+  .mobile-call-full{display:block;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENIU SUS -->
+<nav class="top-menu">
+  <div class="menu-inner">
+    <div class="menu-logo">Tractări Auto Buzău</div>
+    <div class="menu-links" id="menuLinks">
+      <a href="index.html">Acasă</a>
+      <a href="despre-noi.html">Despre noi</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</nav>
+
+<div id="particles"></div>
+
+<section class="about-hero">
+  <h1>Despre noi</h1>
+  <p>
+    Suntem o echipă dedicată de profesioniști care oferă servicii de tractări auto
+    rapide și sigure în Buzău și împrejurimi, non-stop.
+  </p>
+</section>
+
+<section class="about-content">
+
+  <div class="about-box">
+    <h2>Cine suntem</h2>
+    <p>
+      Suntem o firmă specializată în servicii de tractare și asistență
+      rutieră, activi 24/7. Intervenim prompt indiferent de situație, oferind soluții
+      sigure pentru autoturisme și SUV-uri.
+    </p>
+  </div>
+
+  <div class="about-box">
+    <h2>Ce ne diferențiază</h2>
+    <div class="about-highlights">
+      <div class="highlight">
+        <h3>🚨 Intervenție rapidă</h3>
+        <p>Ajungem la locație în cel mai scurt timp posibil.</p>
+      </div>
+      <div class="highlight">
+        <h3>🕒 Disponibili 24/7</h3>
+        <p>Non-stop, inclusiv weekend și sărbători.</p>
+      </div>
+      <div class="highlight">
+        <h3>🔧 Profesionalism</h3>
+        <p>Echipamente moderne și personal calificat.</p>
+      </div>
+      <div class="highlight">
+        <h3>🤝 Corectitudine</h3>
+        <p>Prețuri transparente și servicii sigure.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-box">
+    <h2>Misiunea noastră</h2>
+    <p>
+      Ne dorim să oferim fiecărui client siguranță și liniște atunci când apare o
+      problemă pe drum. Pentru noi, fiecare intervenție contează.
+    </p>
+  </div>
+
+  <div class="about-cta">
+    <a href="tel:+40722921675">📞 Sună acum pentru intervenție</a>
+  </div>
+
+</section>
+
+<footer>
+  <p>📍 Buzău • ☎️ <a href="tel:0722921675" style="color:#fff">0722 921 675</a></p>
+  <p>© 2026 Tractări Auto Buzău</p>
+</footer>
+
+<a href="tel:+40722921675" class="mobile-call-full">📞 Apelează-ne aici!</a>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+tsParticles.load("particles",{
+  particles:{
+    number:{value:window.innerWidth < 768 ? 25 : 50},
+    size:{value:3},
+    move:{enable:true,speed:.8},
+    opacity:{value:.3}
+  }
+});
+
+function toggleMenu(){
+  document.getElementById("menuLinks").classList.toggle("active");
+}
+
+document.querySelectorAll(".menu-links a").forEach(link=>{
+  if(link.href === window.location.href){
+    link.classList.add("active");
+  }
+});
+</script>
+
+</body>
+</html>
