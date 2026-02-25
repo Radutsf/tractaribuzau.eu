@@ -10,6 +10,23 @@
 
   gtag('config', 'AW-17872323221');
 </script>
+  <!-- Event snippet for Contact conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17872323221/3VolCJqW2P4bEJWFmMpC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <!-- SEO -->
 <title>Tractări Auto Buzău | Servicii Non-Stop 24/7</title>
 <meta name="description" content="Tractări auto Remorcari auto Buzău și împrejurimi. Platformă auto non-stop 24/7. Sună acum!">
@@ -461,4 +478,5 @@ document.querySelectorAll(".menu-links a").forEach(link=>{
 
 </body>
 </html>
+
 
