@@ -10,6 +10,23 @@
 
   gtag('config', 'AW-17872323221');
 </script>
+  <!-- Event snippet for Contact conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17872323221/3VolCJqW2P4bEJWFmMpC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <!-- SEO -->
 <title>Galerie Foto | Tractări Auto Buzău</title>
 <meta name="description" content="Galerie foto cu intervenții reale de tractări auto în Buzău și împrejurimi. Servicii non-stop 24/7.">
@@ -314,4 +331,5 @@ document.querySelectorAll(".menu-links a").forEach(link=>{
 
 </body>
 </html>
+
 
